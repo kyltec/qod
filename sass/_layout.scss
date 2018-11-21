@@ -47,13 +47,23 @@ a {
 .entry-meta {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  h2 {
+    font-size: 1.25rem;
+  }
 }
 
 .site-content {
   @include desktop {
     display: flex;
     justify-content: center;
+    &::before {
+      background: '<i class="fas fa-quote-left"></i>';
+      z-index: 10;
+    }
+    &:after {
+      background: '<i class="fas fa-quote-right"></i>';
+      z-index: 10;
+    }
   }
 }
 
@@ -64,6 +74,25 @@ a {
   }
 }
 
-.source {
-  font-size: 1rem;
+.flex-container {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+i.outer-quotes {
+  display: none;
+  @include desktop {
+    color: #00cc00;
+    display: block;
+    padding: 0 40px;
+  }
+}
+
+.hfeed {
+  @include desktop {
+    margin: 0 25%;
+  }
 }

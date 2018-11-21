@@ -12,7 +12,8 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
 
 ?>
-
+<div class="flex-container">
+<i class="fas fa-quote-left outer-quotes fa-7x"></i>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
@@ -35,9 +36,9 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 		<?php endif ?>
 
 	</div><!-- .entry-meta -->
-
 </article><!-- #post-## -->
-
+<i class="fas fa-quote-right outer-quotes fa-7x"></i>
+</div>
 
 <?php 
 

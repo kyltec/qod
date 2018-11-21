@@ -14,7 +14,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<p class="author" >Brought to you by &copy; <a href="https://github.com/kyltec">Kyle Tecson</a></p>
+					<p class="author" >Brought to you by &copy;  <a href="https://github.com/kyltec">Kyle Tecson</a></p>
 				</nav><!-- #site-navigation -->
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

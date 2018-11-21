@@ -673,8 +673,9 @@ a {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem; }
+          align-items: center; }
+  .entry-meta h2 {
+    font-size: 1.25rem; }
 
 @media all and (min-width: 1240px) {
   .site-content {
@@ -683,7 +684,13 @@ a {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+    .site-content::before {
+      background: '<i class="fas fa-quote-left"></i>';
+      z-index: 10; }
+    .site-content:after {
+      background: '<i class="fas fa-quote-right"></i>';
+      z-index: 10; } }
 
 @media all and (min-width: 1240px) {
   .site-main {
@@ -695,11 +702,30 @@ a {
         -ms-flex-direction: column;
             flex-direction: column; } }
 
-.source {
-  font-size: 1rem; }
+@media all and (min-width: 1240px) {
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%; } }
+
+i.outer-quotes {
+  display: none; }
+  @media all and (min-width: 1240px) {
+    i.outer-quotes {
+      color: #00cc00;
+      display: block;
+      padding: 0 40px; } }
+
+@media all and (min-width: 1240px) {
+  .hfeed {
+    margin: 0 25%; } }
 
 .site-footer {
-  margin-bottom: 100px;
   margin-top: 50px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -707,16 +733,17 @@ a {
   -ms-flex-line-pack: start;
       align-content: flex-start; }
 
-@media all and (min-width: 1240px) {
-  .main-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media all and (min-width: 1240px) {
+    .main-navigation {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
 
 .page_item {
   padding: 0 10px;
@@ -726,7 +753,12 @@ a {
 
 .author {
   margin: 0;
-  padding-left: 10px; }
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .author a {
+    padding-left: 5px; }
 
 .header-img {
   margin-top: 70px; }

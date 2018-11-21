@@ -1,15 +1,14 @@
 .site-footer {
-  margin-bottom: 100px;
   margin-top: 50px;
   justify-content: flex-start;
   align-content: flex-start;
 }
 
 .main-navigation {
+  display: flex;
+  flex-wrap: wrap;
   @include desktop {
-    display: flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
   }
 }
 
@@ -24,4 +23,8 @@
 .author {
   margin: 0;
   padding-left: 10px;
+  display: flex;
+  a {
+    padding-left: 5px;
+  }
 }
