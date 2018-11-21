@@ -1,0 +1,27 @@
+.site-footer {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.main-navigation {
+  @include desktop {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+.page_item {
+  padding: 0 10px;
+  border-right: 1px solid #ffffff;
+  &:nth-last-child() {
+    border-right: none;
+  }
+}
+
+.author {
+  margin: 0;
+  padding-left: 10px;
+}

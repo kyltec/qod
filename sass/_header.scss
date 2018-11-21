@@ -1,0 +1,20 @@
+.header-img {
+  margin-top: 70px;
+  img {
+    height: 50px;
+    @include tablet {
+      height: 70px;
+    }
+    @include desktop {
+      height: 100px;
+    }
+  }
+}
+
+.site-header {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
