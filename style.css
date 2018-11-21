@@ -677,6 +677,18 @@ a {
   .entry-meta h2 {
     font-size: 1.25rem; }
 
+.entry-content {
+  font-size: 1rem; }
+  @media all and (min-width: 720px) {
+    .entry-content {
+      font-size: 2rem; } }
+  @media all and (min-width: 1240px) {
+    .entry-content {
+      margin-top: 0;
+      font-size: 3.5rem; }
+      .entry-content p {
+        margin-top: 0; } }
+
 @media all and (min-width: 1240px) {
   .site-content {
     display: -webkit-box;
@@ -684,13 +696,8 @@ a {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-    .site-content::before {
-      background: '<i class="fas fa-quote-left"></i>';
-      z-index: 10; }
-    .site-content:after {
-      background: '<i class="fas fa-quote-right"></i>';
-      z-index: 10; } }
+            justify-content: center;
+    margin-top: 50px; } }
 
 @media all and (min-width: 1240px) {
   .site-main {
@@ -723,7 +730,7 @@ i.outer-quotes {
 
 @media all and (min-width: 1240px) {
   .hfeed {
-    margin: 0 25%; } }
+    margin: 0 15%; } }
 
 .site-footer {
   margin-top: 50px;
