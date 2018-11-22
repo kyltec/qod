@@ -683,7 +683,7 @@ a {
   font-size: 1rem; }
   @media all and (min-width: 720px) {
     .entry-content {
-      font-size: 2rem; } }
+      font-size: 1.5rem; } }
   @media all and (min-width: 1240px) {
     .entry-content {
       margin-top: 0;
@@ -742,6 +742,7 @@ i.outer-quotes {
 
 .site-footer {
   margin-top: 50px;
+  margin-bottom: 20px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -904,3 +905,55 @@ textarea.insert-quote {
     list-style: none; }
   .tag-archives ul a {
     padding-right: 1rem; }
+
+input.search-field {
+  background: #222222;
+  color: white;
+  border: 1px solid #00cc00; }
+  input.search-field:focus {
+    color: white; }
+
+.search-submit {
+  display: none; }
+
+.error-field {
+  border: none; }
+
+.search-icon {
+  color: #00cc00; }
+
+.search-header {
+  border-bottom: 1px dotted #ffffff;
+  padding-bottom: 30px; }
+
+.archive .outer-quotes {
+  display: none; }
+
+.archive .flex-container {
+  border-bottom: 1px dotted #ffffff;
+  padding-top: 20px; }
+
+@media all and (min-width: 1240px) {
+  .archive-wrap {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%; } }
+
+i.outer-quotes-archive {
+  display: none; }
+  @media all and (min-width: 1240px) {
+    i.outer-quotes-archive {
+      color: #00cc00;
+      display: block;
+      padding: 0 40px;
+      font-size: 115px; } }
+
+.archive .page-title {
+  border-bottom: 1px dotted #ffffff;
+  padding-bottom: 20px; }

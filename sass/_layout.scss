@@ -58,7 +58,7 @@ a {
 .entry-content {
   font-size: 1rem;
   @include tablet {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   @include desktop {
     margin-top: 0;
