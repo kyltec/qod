@@ -1,0 +1,91 @@
+form {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    width: 100vh;
+  }
+}
+.q-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+input[type='submit'] {
+  border: 1px solid #00cc00;
+  color: #00cc00;
+  background: #222222;
+  box-shadow: none;
+  text-shadow: none;
+  height: 45px;
+  width: 210px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  margin-top: 80px;
+  &:hover {
+    box-shadow: none;
+    border: 1px solid #00cc00;
+  }
+  @include desktop {
+    justify-content: center;
+  }
+}
+
+input.type-here {
+  background: #222222;
+  border: 1px solid #00cc00;
+  width: 240px;
+}
+
+textarea.insert-quote {
+  width: 90%;
+  height: 100px;
+  background: #222222;
+  border: 1px solid #00cc00;
+}
+
+.submit-label {
+  padding-bottom: 20px;
+}
+
+.post-archives ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    list-style: none;
+    a {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.category-archive ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    list-style: none;
+    a {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.tag-archives ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    list-style: none;
+  }
+  a {
+    padding-right: 1rem;
+  }
+}

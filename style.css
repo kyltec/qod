@@ -676,6 +676,8 @@ a {
           align-items: center; }
   .entry-meta h2 {
     font-size: 1.25rem; }
+  .entry-meta a {
+    font-family: 'exo-light-italic'; }
 
 .entry-content {
   font-size: 1rem; }
@@ -685,19 +687,21 @@ a {
   @media all and (min-width: 1240px) {
     .entry-content {
       margin-top: 0;
-      font-size: 3.5rem; }
+      font-size: 2.5rem; }
       .entry-content p {
         margin-top: 0; } }
 
-@media all and (min-width: 1240px) {
-  .site-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 50px; } }
+.site-content {
+  margin: 0 20px; }
+  @media all and (min-width: 1240px) {
+    .site-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 50px; } }
 
 @media all and (min-width: 1240px) {
   .site-main {
@@ -726,11 +730,15 @@ i.outer-quotes {
     i.outer-quotes {
       color: #00cc00;
       display: block;
-      padding: 0 40px; } }
+      padding: 0 40px;
+      font-size: 115px; } }
 
 @media all and (min-width: 1240px) {
   .hfeed {
     margin: 0 15%; } }
+
+.source a {
+  font-size: 1.25rem; }
 
 .site-footer {
   margin-top: 50px;
@@ -770,7 +778,8 @@ i.outer-quotes {
 .header-img {
   margin-top: 70px; }
   .header-img img {
-    height: 50px; }
+    height: 50px;
+    margin-left: 20px; }
     @media all and (min-width: 720px) {
       .header-img img {
         height: 70px; } }
@@ -789,3 +798,109 @@ i.outer-quotes {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; } }
+
+.about-title {
+  font-family: 'exo-med';
+  margin-top: 0; }
+
+.description p {
+  font-size: 1rem; }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media all and (min-width: 1240px) {
+    form {
+      width: 100vh; } }
+
+.q-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px; }
+  .q-field:nth-child(1) {
+    margin-top: 0; }
+
+input[type='submit'] {
+  border: 1px solid #00cc00;
+  color: #00cc00;
+  background: #222222;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  height: 45px;
+  width: 210px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  margin-top: 80px; }
+  input[type='submit']:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid #00cc00; }
+  @media all and (min-width: 1240px) {
+    input[type='submit'] {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+input.type-here {
+  background: #222222;
+  border: 1px solid #00cc00;
+  width: 240px; }
+
+textarea.insert-quote {
+  width: 90%;
+  height: 100px;
+  background: #222222;
+  border: 1px solid #00cc00; }
+
+.submit-label {
+  padding-bottom: 20px; }
+
+.post-archives ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .post-archives ul li {
+    list-style: none; }
+    .post-archives ul li a {
+      padding-right: 1rem; }
+
+.category-archive ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .category-archive ul li {
+    list-style: none; }
+    .category-archive ul li a {
+      padding-right: 1rem; }
+
+.tag-archives ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .tag-archives ul li {
+    list-style: none; }
+  .tag-archives ul a {
+    padding-right: 1rem; }

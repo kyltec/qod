@@ -2,6 +2,7 @@
   margin-top: 70px;
   img {
     height: 50px;
+    margin-left: 20px;
     @include tablet {
       height: 70px;
     }

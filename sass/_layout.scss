@@ -50,6 +50,9 @@ a {
   h2 {
     font-size: 1.25rem;
   }
+  a {
+    font-family: 'exo-light-italic';
+  }
 }
 
 .entry-content {
@@ -59,7 +62,7 @@ a {
   }
   @include desktop {
     margin-top: 0;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     p {
       margin-top: 0;
     }
@@ -67,6 +70,7 @@ a {
 }
 
 .site-content {
+  margin: 0 20px;
   @include desktop {
     display: flex;
     justify-content: center;
@@ -95,6 +99,7 @@ i.outer-quotes {
     color: #00cc00;
     display: block;
     padding: 0 40px;
+    font-size: 115px;
   }
 }
 
@@ -102,4 +107,8 @@ i.outer-quotes {
   @include desktop {
     margin: 0 15%;
   }
+}
+
+.source a {
+  font-size: 1.25rem;
 }
