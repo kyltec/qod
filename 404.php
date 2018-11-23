@@ -13,7 +13,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 <div class="flex-container">
-<i class="fas fa-quote-left outer-quotes"></i>
+<i class="fas fa-quote-left outer-quote-left"></i>
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
@@ -25,7 +25,7 @@ get_header(); ?>
 					<?php get_search_form(); ?>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
-			<i class="fas fa-quote-right outer-quotes"></i>
+			<i class="fas fa-quote-right outer-quote-right"></i>
 </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

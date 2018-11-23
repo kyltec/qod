@@ -97,12 +97,22 @@ a {
   }
 }
 
-i.outer-quotes {
+i.outer-quote-left {
   display: none;
   @include desktop {
     color: #00cc00;
     display: block;
-    padding: 0 40px;
+    padding-right: 40px;
+    font-size: 115px;
+  }
+}
+
+i.outer-quote-right {
+  display: none;
+  @include desktop {
+    color: #00cc00;
+    display: block;
+    padding-left: 40px;
     font-size: 115px;
   }
 }
@@ -110,11 +120,18 @@ i.outer-quotes {
 .hfeed {
   @include desktop {
     margin: 0 15%;
+    padding-bottom: 2rem;
   }
 }
 
 .source {
   @include desktop {
     font-size: 1.25rem;
+  }
+}
+
+.site-info {
+  @include desktop {
+    display: flex;
   }
 }

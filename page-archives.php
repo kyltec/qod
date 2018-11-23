@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
             <div class="flex-container">
-            <i class="fas fa-quote-left outer-quotes"></i>
+            <i class="fas fa-quote-left outer-quote-left"></i>
 			<section class="browse-archives">
                 <header class="entry-header">   
                     <?php the_title( '<h1 class="entry-title">', '</h1>');?>
@@ -58,7 +58,7 @@ get_header(); ?>
 
 
             </section>
-            <i class="fas fa-quote-right outer-quotes"></i> 
+            <i class="fas fa-quote-right outer-quote-right"></i> 
             </div>
 
 		</main><!-- #main -->
