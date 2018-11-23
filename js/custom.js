@@ -76,8 +76,8 @@
           title: $quoteAuthor,
           content: $quote,
           _qod_quote_source_url: $quoteSourceUrl,
-          _qod_quote_source: $quoteSource
-          // status:
+          _qod_quote_source: $quoteSource,
+          status: 'publish'
         },
         beforeSend: function(xhr) {
           xhr.setRequestHeader('X-WP-Nonce', qod_vars.nonce);
