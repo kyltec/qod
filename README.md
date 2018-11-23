@@ -4,17 +4,20 @@ A WordPress theme for the Quotes on Dev project.
 
 ## Screenshots:
 
-**Desktop**
+## Desktop
+
 <img src="/screenshots/front-page-desktop.png" width="800" height="500">
 <img src="/screenshots/about-page-desktop.png" width="800" height="500">
 <img src="/screenshots/archive-desktop.png" width="800" height="500">
 <img src="/screenshots/submit-desktop.png" width="800" height="500">
 
-**Tablet**
+## Tablet
+
 <img src="/screenshots/front-page-tablet.png" width="800" height="500">
 
-**Mobile**
-<img src="/screenshots/front-page-mobile.png" width="800" height="500">
+## Mobile
+
+<img src="/screenshots/front-page-mobile.png" width="500" height="800">
 
 ## Built with:
 
