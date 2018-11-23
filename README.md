@@ -6,12 +6,12 @@ A WordPress theme for the Quotes on Dev project.
 
 **Desktop**
 ![Fornt Page Desktop](/screenshots/front-page-desktop.png)
-![About Page Desktop](/screenshots/about-desktop.png)
+![About Page Desktop](/screenshots/about-page-desktop.png)
 ![Archive Page Desktop](/screenshots/archive-desktop.png)
 ![Submit Form Desktop](/screenshots/submit-desktop.png)
 
 **Tablet**
-![Font Page Tablet](/screenshots/fornt-page-tablet.png)
+![Font Page Tablet](/screenshots/front-page-tablet.png)
 
 **Mobile**
 ![Front Page Mobile](/screenshots/front-page-mobile.png)
