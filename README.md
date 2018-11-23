@@ -5,16 +5,16 @@ A WordPress theme for the Quotes on Dev project.
 ## Screenshots:
 
 **Desktop**
-![Fornt Page Desktop](/screenshots/front-page-desktop.png = 500x800)
-![About Page Desktop](/screenshots/about-page-desktop.png = 500x800)
-![Archive Page Desktop](/screenshots/archive-desktop.png = 500x800)
-![Submit Form Desktop](/screenshots/submit-desktop.png = 500x800)
+<img scr="/screenshots/front-page-desktop.png" width="800" height="500"
+<img scr="/screenshots/about-page-desktop.png" width="800" height="500"
+<img scr="/screenshots/archive-desktop.png" width="800" height="500"
+<img scr="/screenshots/submit-desktop.png" width="800" height="500"
 
 **Tablet**
-![Font Page Tablet](/screenshots/front-page-tablet.png = 500x800)
+<img scr="/screenshots/front-page-tablet.png" width="800" height="500"
 
 **Mobile**
-![Front Page Mobile](/screenshots/front-page-mobile.png = 500x800)
+<img scr="/screenshots/front-page-mobile.png" width="800" height="500"
 
 ## Built with:
 
