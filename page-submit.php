@@ -24,7 +24,7 @@ get_header(); ?>
 
                         <div class="q-field">
                            <label class="submit-label" for="quote-author">Author of Quote</label>
-                          <input class="type-here" type="text" name="quote_author" id="quote-author" required>
+                          <input class="type-here" type="text" name="quote_author" id="quote-author">
                         </div>
 
                         <div class="q-field">

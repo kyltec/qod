@@ -61,13 +61,16 @@
 
     function postQuote() {
       // get value of form input
-      // $('#form-id ).val();
-      const $quoteAuthor = $('#quote-author').val();
+      let $quoteAuthor = $('#quote-author').val();
       const $quote = $('#quote-content').val();
       const $quoteSource = $('#quote-source').val();
       const $quoteSourceUrl = $('#quote-source-url').val();
       const $submitForm = $('#quote-submission-form');
       const $submitFormWrap = $('.quote-submission-wrapper');
+
+      if ($quoteAuthor == '' && $quote != '') {
+        $quoteAuthor = 'Anonymous';
+      } // sets quote author to anonymous when field is empty
 
       $.ajax({
         method: 'POST',
