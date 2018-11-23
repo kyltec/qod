@@ -24,12 +24,12 @@ get_header(); ?>
 
                         <div class="q-field">
                            <label class="submit-label" for="quote-author">Author of Quote</label>
-                          <input class="type-here" type="text" name="quote_author" id="quote-author">
+                          <input class="type-here" type="text" name="quote_author" id="quote-author" required>
                         </div>
 
                         <div class="q-field">
                             <label class="submit-label" for="quote-content">Quote</label>
-                            <textarea class="insert-quote" name="quote_content" id="quote-content" ></textarea>
+                            <textarea class="insert-quote" name="quote_content" id="quote-content" required></textarea>
                         </div>
                         
                         <div class="q-field">
