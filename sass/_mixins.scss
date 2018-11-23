@@ -16,3 +16,9 @@
     @content;
   }
 }
+
+@mixin footer-display {
+  @media all and (min-width: $footer-change) {
+    @content;
+  }
+}

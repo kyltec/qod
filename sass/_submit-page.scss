@@ -38,6 +38,11 @@ input.type-here {
   background: #222222;
   border: 1px solid #00cc00;
   width: 240px;
+  color: #ffffff;
+  &:focus {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
 }
 
 textarea.insert-quote {
@@ -45,47 +50,18 @@ textarea.insert-quote {
   height: 100px;
   background: #222222;
   border: 1px solid #00cc00;
+  color: #ffffff;
+  &:focus {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
 }
 
 .submit-label {
   padding-bottom: 20px;
 }
 
-.post-archives ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  li {
-    list-style: none;
-    a {
-      padding-right: 1rem;
-    }
-  }
-}
-
-.category-archive ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  li {
-    list-style: none;
-    a {
-      padding-right: 1rem;
-    }
-  }
-}
-
-.tag-archives ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  li {
-    list-style: none;
-  }
-  a {
-    padding-right: 1rem;
-  }
+.error-msg {
+  color: red;
+  display: none;
 }

@@ -673,9 +673,14 @@ a {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .entry-meta h2 {
-    font-size: 1.25rem; }
+    font-size: 1rem; }
+    @media all and (min-width: 1240px) {
+      .entry-meta h2 {
+        font-size: 1.25rem; } }
   .entry-meta a {
     font-family: 'exo-light-italic'; }
 
@@ -737,8 +742,9 @@ i.outer-quotes {
   .hfeed {
     margin: 0 15%; } }
 
-.source a {
-  font-size: 1.25rem; }
+@media all and (min-width: 1240px) {
+  .source {
+    font-size: 1.25rem; } }
 
 .site-footer {
   margin-top: 50px;
@@ -764,8 +770,11 @@ i.outer-quotes {
 .page_item {
   padding: 0 10px;
   border-right: 1px solid #ffffff; }
-  .page_item:nth-last-child() {
+  .page_item:last-child {
     border-right: none; }
+    @media all and (min-width: 520px) {
+      .page_item:last-child {
+        border-right: 1px solid #ffffff; } }
 
 .author {
   margin: 0;
@@ -856,65 +865,44 @@ input[type='submit'] {
 input.type-here {
   background: #222222;
   border: 1px solid #00cc00;
-  width: 240px; }
+  width: 240px;
+  color: #ffffff; }
+  input.type-here:focus {
+    color: #ffffff;
+    border: 1px solid #ffffff; }
 
 textarea.insert-quote {
   width: 90%;
   height: 100px;
   background: #222222;
-  border: 1px solid #00cc00; }
+  border: 1px solid #00cc00;
+  color: #ffffff; }
+  textarea.insert-quote:focus {
+    color: #ffffff;
+    border: 1px solid #ffffff; }
 
 .submit-label {
   padding-bottom: 20px; }
 
-.post-archives ul {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .post-archives ul li {
-    list-style: none; }
-    .post-archives ul li a {
-      padding-right: 1rem; }
-
-.category-archive ul {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .category-archive ul li {
-    list-style: none; }
-    .category-archive ul li a {
-      padding-right: 1rem; }
-
-.tag-archives ul {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .tag-archives ul li {
-    list-style: none; }
-  .tag-archives ul a {
-    padding-right: 1rem; }
+.error-msg {
+  color: red;
+  display: none; }
 
 input.search-field {
   background: #222222;
   color: white;
   border: 1px solid #00cc00; }
   input.search-field:focus {
-    color: white; }
+    color: white;
+    border: 1px solid #ffffff; }
 
 .search-submit {
-  display: none; }
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: auto; }
+  .search-submit:hover {
+    border: none; }
 
 .error-field {
   border: none; }
@@ -957,3 +945,51 @@ i.outer-quotes-archive {
 .archive .page-title {
   border-bottom: 1px dotted #ffffff;
   padding-bottom: 20px; }
+
+.post-archives ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .post-archives ul li {
+    list-style: none; }
+    .post-archives ul li a {
+      padding-right: 1rem; }
+      @media all and (min-width: 1240px) {
+        .post-archives ul li a {
+          font-size: 1.5rem; } }
+
+.category-archive ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .category-archive ul li {
+    list-style: none; }
+    .category-archive ul li a {
+      padding-right: 1rem; }
+      @media all and (min-width: 1240px) {
+        .category-archive ul li a {
+          font-size: 1.5rem; } }
+
+.tag-archives ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .tag-archives ul li {
+    list-style: none; }
+  .tag-archives ul a {
+    padding-right: 1rem; }
+    @media all and (min-width: 1240px) {
+      .tag-archives ul a {
+        font-size: 1.5rem !important; } }

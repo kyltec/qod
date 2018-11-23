@@ -42,10 +42,13 @@ get_header(); ?>
                             <input class="type-here" type="url" name="quote_source_url" id="quote-source-url">
                         </div>
 
-                        <input type="submit" value="Submit a Quote">
+                        <input type="submit" value="Submit a Quote"> <p class="error-msg"><i class="fas fa-exclamation-triangle"></i> We were not able to complete this task</p>
+                      
 
 
                     </form>
+     
+                       
                 </div><!-- .quote-submission-wrapper -->
 
 

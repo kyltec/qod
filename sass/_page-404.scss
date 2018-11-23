@@ -5,11 +5,18 @@ input.search-field {
 
   &:focus {
     color: white;
+    border: 1px solid #ffffff;
   }
 }
 
 .search-submit {
-  display: none;
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: auto;
+  &:hover {
+    border: none;
+  }
 }
 
 .error-field {

@@ -16,8 +16,11 @@
 .page_item {
   padding: 0 10px;
   border-right: 1px solid #ffffff;
-  &:nth-last-child() {
+  &:last-child {
     border-right: none;
+    @include footer-display {
+      border-right: 1px solid #ffffff;
+    }
   }
 }
 
