@@ -19,6 +19,10 @@ A WordPress theme for the Quotes on Dev project.
 
 <img src="/screenshots/front-page-mobile.png" width="500" height="800">
 
+## Requirements to run
+
+Gulp or some other node.
+
 ## Built with:
 
 JavaScript - used for submit form slide up animation, grabbing content from wordpress archive, and posting content to wordpress archive

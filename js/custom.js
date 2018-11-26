@@ -44,7 +44,6 @@
           // append message for user or alert a message saying someting went wrong
           $('.entry-content').empty();
           $('.entry-content').append('<p>Sorry an error has occured</p>');
-          console.log(err);
         });
     } // end of getQuote
 
